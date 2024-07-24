@@ -104,7 +104,7 @@
         const playersSums = Object.entries(players)
             .map(([player, sum]) => ({ player, sum }))
             .sort((a, b) => b.sum - a.sum)
-            .map(entry => `${entry.player}: ${entry.sum} Obyvatel`);
+            .map(entry => `${entry.player}: ${entry.sum} Obyvatel,`);
         const fullFarms = (totalSum / 20000).toFixed(1);
 
         return {
